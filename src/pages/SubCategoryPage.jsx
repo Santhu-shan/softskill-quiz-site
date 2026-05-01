@@ -70,6 +70,11 @@ function TopicCard({ topic, catId, cat }) {
       </div>
       <div className="topic-card-body">
         <h3 className="topic-title">{topic.title}</h3>
+        {topic.courseCode && (
+          <div className="topic-meta-badge">
+            {topic.courseCode} · {topic.semester}
+          </div>
+        )}
         <p className="topic-desc">{topic.description}</p>
 
         <div className="topic-actions">

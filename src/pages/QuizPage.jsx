@@ -248,7 +248,10 @@ export default function QuizPage() {
   return (
     <div className="page-container quiz-page" ref={topRef}>
       <div className="quiz-topbar glass anim-fade">
-        <div className="quiz-topic-label"><span className="quiz-cat-icon">{cat.icon}</span>{topic.title}</div>
+        <div className="quiz-topic-label">
+          <span className="quiz-cat-icon">{cat.icon}</span>
+          {topic.courseCode ? `${topic.courseCode}: ${topic.title}` : topic.title}
+        </div>
         <div className="quiz-dots">
           {questions.map((_, i) => (
             <div key={i} className={`qdot ${i === currentIdx ? "qdot-current" : ""} ${answers[i] === questions[i].answer ? "qdot-correct" : answers[i] !== undefined ? "qdot-wrong" : ""}`} />

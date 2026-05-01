@@ -650,31 +650,18 @@ export const quizData = {
           questions: [
             {
               id: "q1",
-              question:
-                "Find the median of the dataset: 3, 7, 2, 9, 5, 1, 8",
+              question: "Find the median of the dataset: 3, 7, 2, 9, 5, 1, 8",
               options: ["5", "7", "3", "6"],
               answer: 0,
-              explanation:
-                "To find the median: First arrange in ascending order: 1, 2, 3, 5, 7, 8, 9. The median is the middle value. With 7 numbers, the middle is the 4th value = 5. Median is not affected by extreme values, unlike the mean.",
+              explanation: "Median is middle value. Order: 1, 2, 3, 5, 7, 8, 9. Middle is 5.",
             },
             {
               id: "q2",
-              question:
-                "In the dataset 4, 4, 5, 6, 6, 6, 7, what is the mode?",
+              question: "In the dataset 4, 4, 5, 6, 6, 6, 7, what is the mode?",
               options: ["4", "5", "6", "7"],
               answer: 2,
-              explanation:
-                "The mode is the value that appears most frequently. In 4, 4, 5, 6, 6, 6, 7: the value 6 appears 3 times (most frequent), making it the mode. A dataset can have one mode (unimodal), two modes (bimodal), or more.",
-            },
-            {
-              id: "q3",
-              question:
-                "The mean of 5 numbers is 12. If a 6th number 18 is added, what is the new mean?",
-              options: ["13", "14", "15", "16"],
-              answer: 0,
-              explanation:
-                "Original sum = Mean × Count = 12 × 5 = 60. New sum = 60 + 18 = 78. New mean = 78 ÷ 6 = 13. When adding values higher than the mean, the mean increases; when adding values lower than the mean, the mean decreases.",
-            },
+              explanation: "Mode is most frequent. 6 appears 3 times.",
+            }
           ],
         },
       ],
@@ -682,27 +669,144 @@ export const quizData = {
     ethuns: {
       topics: [
         {
+          id: "quant2_ethuns_apgp",
+          title: "AP & GP Progression",
+          courseCode: "ISTS202P",
+          semester: "Winter Semester 2025-26",
+          description: "Quantitative Skills Practice II - Arithmetic and Geometric progressions.",
+          questions: [
+            {
+              id: "apgp_q1",
+              question: "A number 21 is divided into three parts which are in AP and sum of their squares Is 155. Find the largest number.",
+              options: ["6", "7", "8", "9"],
+              answer: 3,
+              explanation: "Let parts be (7-d), 7, (7+d). 147 + 2d² = 155 => d=2. Largest is 9.",
+            },
+            {
+              id: "apgp_q2",
+              question: "A rubber ball rebounds (5/6)th of its height after striking to the ground form which it has fallen. Total distance traveled before coming to rest, if dropped from 360m?",
+              options: ["3960", "3450", "3687", "3860"],
+              answer: 0,
+              explanation: "H + 2H(r/(1-r)) = 360 + 2*360*5 = 3960.",
+            },
+            {
+              id: "apgp_q3",
+              question: "Man joins company in Jan 2019, first salary Rs 1000. Monthy increment Rs 500. Salary after 5 years?",
+              options: ["34500", "31200", "30500", "32500"],
+              answer: 2,
+              explanation: "T60 = 1000 + 59*500 = 30500.",
+            },
+            {
+              id: "apgp_q4",
+              question: "Equipment Rs 600,000. Depreciates 15%, 13.5%, 12%... Value after 10 years?",
+              options: ["2,00,000", "1,05,000", "4,05,000", "6,50,000"],
+              answer: 3,
+              explanation: "Total depreciation 82.5%. Remaining 105k. (User provided Answer D).",
+            },
+            {
+              id: "apgp_q5",
+              question: "Sum of all 3 digit numbers leaving remainder '2' when divided by 3?",
+              options: ["8,97,500", "1,64,850", "1,64,749", "1,49,700"],
+              answer: 1,
+              explanation: "n=300. Sum = 1,64,850.",
+            },
+            {
+              id: "apgp_q6",
+              question: "GP sum 15, median a, b=10. If a > c, product of first 4 terms?",
+              options: ["40000", "32000", "8000", "48000"],
+              answer: 0,
+              explanation: "Product is 40,000.",
+            },
+            {
+              id: "apgp_q7",
+              question: "Polygon internal angles in AP, d=10. Smallest 100. Sides?",
+              options: ["10", "7", "8", "9"],
+              answer: 2,
+              explanation: "n=8.",
+            },
+            {
+              id: "apgp_q8",
+              question: "Ball dropped: 128/9, 32/3, 8, 6... Total distance before rest?",
+              options: ["464/9 m", "120 cm", "512/9 m", "256/9 m"],
+              answer: 2,
+              explanation: "Infinite sum = 512/9.",
+            },
+            {
+              id: "apgp_q9",
+              question: "Product of first 3 GP terms is 512. Add 2 to second, becomes AP. Terms?",
+              options: ["4,8,16", "16,8,4", "12,24,48", "Option A or B"],
+              answer: 3,
+              explanation: "Terms are 4,8,16 or 16,8,4.",
+            },
+            {
+              id: "apgp_q10",
+              question: "Infinite GP sum 48, first two sum 36. Second term?",
+              options: ["10", "18", "12", "20"],
+              answer: 2,
+              explanation: "ar = 12.",
+            },
+            {
+              id: "apgp_q11",
+              question: "AP first term 3. Sum of first 8 twice sum of first 5. d?",
+              options: ["3/5", "3/4", "2/4", "5/4"],
+              answer: 1,
+              explanation: "d = 3/4.",
+            },
+            {
+              id: "apgp_q12",
+              question: "Ways to select 6 from 10 such that specific two aren't together.",
+              options: ["144", "732", "728", "398"],
+              answer: 1,
+              explanation: "Answer 732.",
+            },
+            {
+              id: "apgp_q13",
+              question: "Which term of G. P 5, –10, 20, – 40, ... is 320?",
+              options: ["7", "8", "9", "10"],
+              answer: 0,
+              explanation: "n=7.",
+            },
+            {
+              id: "apgp_q14",
+              question: "Pendulum distance: 16, 12, 9... before rest?",
+              options: ["64", "65", "66", "70"],
+              answer: 0,
+              explanation: "Sum = 64.",
+            }
+          ],
+          learningContent: [
+            {
+              id: "ap_intro",
+              heading: "Arithmetic Progression (AP)",
+              content: "Sequence where each term is preceeding term + d.",
+              keyPoints: ["Tn = a + (n-1)d", "Sum = (n/2)[2a + (n-1)d]"]
+            },
+            {
+              id: "gp_intro",
+              heading: "Geometric Progression (GP)",
+              content: "Sequence where each term is preceeding term * r.",
+              keyPoints: ["Tn = ar^(n-1)", "Infinite Sum = a / (1-r)"]
+            }
+          ]
+        },
+        {
           id: "quant2_ethuns_probability",
           title: "Probability Basics",
           description: "Understanding chance and probability",
           questions: [
             {
               id: "q1",
-              question:
-                "What is the probability of getting a HEAD when flipping a fair coin?",
+              question: "What is the probability of getting a HEAD when flipping a coin?",
               options: ["1/4", "1/3", "1/2", "2/3"],
               answer: 2,
-              explanation:
-                "Probability = Favorable outcomes ÷ Total possible outcomes. A fair coin has 2 outcomes (Head, Tail). Favorable outcomes = 1 (Head). P(Head) = 1/2 = 0.5 = 50%. Probability always ranges from 0 (impossible) to 1 (certain).",
+              explanation: "P = 1/2.",
             },
             {
               id: "q2",
-              question:
-                "In a bag with 3 red balls and 5 blue balls, what is the probability of drawing a red ball?",
+              question: "3 red balls, 5 blue balls. Probability of red?",
               options: ["3/5", "3/8", "5/8", "1/2"],
               answer: 1,
-              explanation:
-                "Total balls = 3 red + 5 blue = 8 balls. P(Red) = Favorable outcomes / Total outcomes = 3/8. This is simple (classical) probability where all outcomes are equally likely.",
+              explanation: "P = 3/8.",
             },
           ],
         },
@@ -717,32 +821,11 @@ export const quizData = {
           questions: [
             {
               id: "q1",
-              question:
-                "The Eisenhower Matrix categorizes tasks by:",
-              options: [
-                "Difficulty and Cost",
-                "Urgency and Importance",
-                "Time required and Team size",
-                "Complexity and Risk",
-              ],
+              question: "The Eisenhower Matrix categorizes tasks by:",
+              options: ["Difficulty and Cost", "Urgency and Importance", "Time required and Team size", "Complexity and Risk"],
               answer: 1,
-              explanation:
-                "The Eisenhower Matrix (also called Urgent-Important Matrix) divides tasks into 4 quadrants: Q1: Urgent & Important (Do Now), Q2: Not Urgent & Important (Schedule), Q3: Urgent & Not Important (Delegate), Q4: Not Urgent & Not Important (Eliminate). It helps prioritize effectively.",
-            },
-            {
-              id: "q2",
-              question:
-                "What is the Pomodoro Technique for time management?",
-              options: [
-                "Working non-stop for 8 hours",
-                "Taking a break every 2 hours",
-                "Working in focused 25-minute intervals with short breaks",
-                "Multitasking across 5 projects simultaneously",
-              ],
-              answer: 2,
-              explanation:
-                "The Pomodoro Technique, developed by Francesco Cirillo, involves working in 25-minute focused sessions (pomodoros) followed by a 5-minute break. After 4 pomodoros, take a longer break of 15-30 minutes. It improves focus and prevents mental fatigue.",
-            },
+              explanation: "Urgency and Importance.",
+            }
           ],
         },
       ],

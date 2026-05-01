@@ -101,7 +101,9 @@ export default function LearningPage() {
         <div className="learn-header-left">
           <div className="learn-icon" style={{ background: cat.gradient }}>📖</div>
           <div>
-            <div className="badge badge-teal" style={{ marginBottom: 8 }}>Learning Mode</div>
+            <div className="badge badge-teal" style={{ marginBottom: 8 }}>
+              {topic.courseCode ? `${topic.courseCode} | ${topic.semester}` : "Learning Mode"}
+            </div>
             <h1>{topic.title}</h1>
             <p>{topic.description}</p>
           </div>

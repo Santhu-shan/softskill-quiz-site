@@ -299,7 +299,11 @@ function FileRow({ item, onRemove, onNavigate }) {
 
         {/* Error detail */}
         {status === STATUS.ERROR && error && (
-          <div className="fr-error">{error}</div>
+          <div className="fr-error">
+            {error.includes("Quota Exceeded") 
+              ? "⚠️ AI Quota Exceeded. Please wait 1 minute and retry." 
+              : error}
+          </div>
         )}
 
         {/* Done result preview */}

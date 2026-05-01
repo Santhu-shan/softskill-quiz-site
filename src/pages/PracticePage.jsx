@@ -204,7 +204,9 @@ export default function PracticePage() {
       <div className="practice-header anim-fade-up">
         <div className="practice-header-icon" style={{ background: cat.gradient }}>✏️</div>
         <div className="practice-header-content">
-          <div className="badge badge-purple" style={{ marginBottom: 8 }}>Practice Mode</div>
+          <div className="badge badge-purple" style={{ marginBottom: 8 }}>
+            {topic.courseCode ? `${topic.courseCode} | ${topic.semester}` : "Practice Mode"}
+          </div>
           <h1>{topic.title}</h1>
           <p>Select an answer. Wrong answers get AI-powered explanations.</p>
         </div>
